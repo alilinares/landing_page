@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS links -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" href="styles/flex.css">
+    <title> MIAMORI | Product Landing Page </title>
+  </head>
+
+  <body>
+      <header id="header" class="flex-container nav-flex-container">
+        <!-- logo -->
+        <div class="site-logo">
+          <img id="header-img" src="https://i.ibb.co/RGXvBhh/logo.png" alt="miamori logo">
+          <p id="company-description"> A journey to self love </p>
+        </div>
+        <!-- navigation bar -->
+        <nav id="nav-bar">
+          <!-- nav links -->
+          <div id="nav-links">
+            <a class="nav-link" href="#features" > Features</a> 
+            <a class="nav-link" href="#pricing"> Pricing </a> 
+            <a class="nav-link" href="#register"> Register </a>
+          </div>
+        </nav> <!-- close navigation bar-->
+      </header>
+
+        <main>
+          <!-- BANNER -->
+          <section id="banner">
+            <div class="banner-headline">
+              <p class="banner-text"> Everything You Want to Know About Yoga </p>
+              <p class="banner-text"> with Renowned Yoga Therapist  Ligia Linares </p>
+            </div>
+          </section>
+          <div class="grid-container"> 
+
+          <!-- ----------------------------------------------------------
+          FEATURES -->
+         <section id="features" class="flex-container ">
+           
+           <div class="feat-flex-container"> <!-- row -->
+            <div class="features-heart"><i class="fas fa-heart hearts"></i></div>
+              <div class="feature-description">
+                <h3 class="feature-title"> Self-Paced </h3>
+                <p> This webinar is self-paced. Save and look back at your progress. </p>
+              </div>
+           </div>
+
+           <!-- feature #2 -->
+           <div class="feat-flex-container">
+            <div class="features-heart"><i class="fas fa-heart hearts"></i></div>
+            <div class="feature-description">
+              <h3 class="feature-title"> Improved Health! </h3>
+              <p> Yoga is very healthy for your mind and body. </p>
+            </div>
+           </div>
+
+           <!-- Features # 3 -->
+           <div class="feat-flex-container">
+            <div class="features-heart"><i class="fas fa-heart hearts"></i></div>
+            <div class="feature-description">
+              <h3 class="feature-title"> Learn a new lifestyle </h3>
+              <p> The training provides you with new skills that will last a lifetime! </p>
+            </div>
+           </div>
+         </section>
+
+         <!-- ----------------------------------------------------------
+          VIDEO -->
+          <section id="video-section">
+            <iframe id="video" src="https://www.youtube-nocookie.com/embed/fMJ8mTUzDYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </section>
+
+          <!-- ----------------------------------------------------------
+          Pricing Packages -->
+         <section id="pricing" class="flex-container price-flex-container" > 
+           <!-- =========
+             Beginner -->
+           <div class="package-card">
+             <h4 class="pricing-label"> Beginner </h4>
+             <p class="price"> $25 </p>
+             <p class="price-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum at varius vel pharetra. Mollis aliquam ut porttitor leo.  </p>
+           </div>
+           <!-- ==========
+            Intermediate -->
+           <div class="package-card">
+            <h4 class="pricing-label"> Intermediate </h4>
+            <p class="price"> $50 </p>
+            <p class="price-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum at varius vel pharetra. Mollis aliquam ut porttitor leo.  </p>
+          </div>
+          <!-- ========
+          Advanced -->
+          <div class="package-card">
+            <h4 class="pricing-label"> Advanced </h4>
+            <p class="price"> $75 </p>
+            <p class="price-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum at varius vel pharetra. Mollis aliquam ut porttitor leo. </p>
+
+          </div>
+        </section>
+
+        <!-- ----------------------------------------------------------
+          Registration -->
+         <section id="register" class="flex-container register-flex-container"> 
+          <!-- webinar description -->
+          <div id="webinar-description">
+            <h3 class="webinar-title"> Join us!</h3>
+            <hr class='border'>
+            <p class="webinar-paragraphs"> MIAMORI is teaming up with <strong> Dharma Yoga & Wellness Inc </strong> to answer your questions about yoga therapy.</p>
+            <p class="webinar-paragraphs"> You will have the chance to submit questions beforehand and in real time. Additionally you'll learn the following: </p>
+            <ul class="webinar-list"">
+              <li> A brief history on Yoga Therapy </li>
+              <li> A look into your the human anatomy </li>
+              <li> The terminology used in yoga in general </li>
+              <li> Many yoga postures, some target specific aspects of your mind and body </li>
+              <li>Simple techniques to do at home, your office, or while waiting in line for a cup of coffee! </li>
+            </ul>
+            <div id="ebook-signup">
+              <h4> Get a Free Ebook! </h4>
+              <form id="form" action="https://www.freecodecamp.com/email-submit" >
+                <!-- email -->
+                <input type="email" id="email" name="email" required placeholder="email@address.com">
+              <input id="submit" type="submit" value="Download" class="btn">
+              </form>
+            </div>
+          </div>
+
+          <!-- FORM -->
+          <div id="webinar-registration">
+          <form id="webinar-form" action="" method="POST">
+            <h3 class="form-title"> Register </h3>
+            <hr class='border'>
+            <!-- FIRST-NAME -->
+            <div>
+              <label for="first-name"> First Name *</label>
+              <input type="text" id="first-name" name="fname" required placeholder="Enter first name">
+            </div>
+
+            <!-- LAST-NAME  -->
+            <div>
+              <label for="last-name">Last Name *</label>
+              <input type="text" id="last-name" name="lname" required placeholder="Enter surname">
+            </div>
+
+            <!-- EMAIL -->
+            <div>
+              <label for="webinar-email">Email *</label>
+              <input type="email" id="webinar-email" name="email-address" required placeholder="email@address.com">
+            </div>
+            <!-- CHOOSE PACKAGE -->
+            <div>
+              <label for="webinar-package"> Choose a Package: </label>
+              <select name="webinar-level" id="webinar-package">
+                <option value="basic" selected>Basic $25</option>
+                <option value="intermediate">Intermediate $50</option>
+                <option value="advanced">Advanced $75</option>
+              </select>
+
+            </div>
+            <!-- COMMENTS -->
+            <div>
+              <label for="comments">Any Comments</label>
+              <textarea name="user-comments" id="comments" cols="30" rows="10" placeholder="Enter your comments here"></textarea>
+            </div>
+            <input id="submit" type="submit" value="Submit">
+
+            <p class="contact-disclaimer"> We will never sell your contact information to any 3rd party or send you spam. We Promise. </p> 
+          </form> 
+        </div>  
+        </section>
+
+        <section id="instructor">
+           <h3 class="host-headline"> About the host </h3>
+          
+           <div class="profile flex-container">
+            <div id="profile-pic">
+            </div>
+           <div class="profile-description">
+            <h4 class="instructor-name"> Ligia Linares </h4>
+            <p class="bio"> I specialize in Yoga Therapy, E-RYT, RYT and Reiki. Teaching Yoga at the Northwest Leisure Center and Coronation Park. Available one to one yoga consultations, and Reiki</p>
+            <a class="social-links" href="https://www.instagram.com/ma_lakshmi_anand/?hl=en"> <i class="fab fa-instagram"></i></a>
+            <a class="social-links" href="https://www.facebook.com/yogaligia"><i class="fab fa-facebook"></i></a>
+           </div>
+          </div>
+        </section>
+        <!-- ----------------------------
+        Testmonials -->
+        <section class="testies">
+          <h4 class="testies-title">Testmonials</h4>
+          <hr class="testies-hr">
+          <div>
+            <blockquote>
+              "I am so glad to have met Ligia! I highly recommend her class. Her classes have helped me immensely! She has such a positive, calm energy" <span class="testie-author"> Brenda Entwistle</span>
+            </blockquote>
+            <blockquote>
+              "So grateful to have been introduced to Ligia. Her calm and gentle manner of teaching yoga made me feel comfortable and welcome in her class. I highly recommend any class taught by Ligia" <span class="testie-author"> Angel Carlson-Fedyk </span>
+            </blockquote>
+            <blockquote>
+            "She is such a special person and a great yoga teacher. She makes you feel so comfortable in her class and is there to help with any questions you might have. I would definitely recommend her to anyone interested in taking a yoga class" <span class="testie-author"> Kat Wingert</span>
+            </blockquote>
+          </div>
+        </section>
+      </div> <!-- close grid container -->
+        </main>
+      
+      
+      <footer id="footer">
+        <div id="footer-widget-1">
+        <p> Privacy | Terms & Conditions </p>
+        </div>
+        <div id="footer-widget-2">
+          <p> 2020 &copy; Ali Linares </p>
+        </div>
+      </footer>
+    
+    <script src="https://kit.fontawesome.com/ec13c00532.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>

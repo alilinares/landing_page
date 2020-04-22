@@ -1,0 +1,103 @@
+.flex-container{
+    display:flex;
+    flex-direction: column;
+}
+
+@media (min-width:950px){
+    .nav-flex-container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* move logo from left */
+    .site-logo{
+        justify-self: flex-start;
+        width:30%;
+    }
+    #header-img{
+        max-width:20%;
+    }
+
+    /* banner */
+    #banner,.banner-headline{
+        height:400px;
+    }
+    .banner-text{
+        font-size:2.5rem;
+    }
+
+    /* features */
+    .feat-flex-container{
+        margin-bottom:2em;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #features{
+        max-width:100%;
+        margin:0 auto;
+        text-align:left;
+        padding:1em; }
+
+    .features-heart{ 
+        font-size:2.5rem; 
+        width:10%;
+        align-self: flex-start;
+    }
+
+    .feature-title{ margin:0; }
+
+    .feature-description{
+        padding-left:2em;
+        width:90%; }
+
+    .features-heart{ text-align:center; }
+    
+    /* video */
+    #video {
+        width: 920px;
+        height: 550px;
+    }
+    /* Pricing Labels */
+    .price-flex-container{
+        display: flex;
+        flex-direction: row;
+    }
+    #pricing{
+        max-width:70%;
+    }
+    .package-card{
+        margin:2em 1em;
+    }
+
+    .price-description{
+        line-height: 18px;
+    }
+
+    /* registration section */
+    .register-flex-container{
+        flex-direction: row;
+    }
+    .webinar-paragraphs{
+        width:100%;
+    }
+    .webinar-list{
+        padding:1em;
+        width:100%;
+    }
+    form{
+        max-width:100%;
+    }
+
+    /* instructor card */
+    .bio{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    /* testies */
+    blockquote{
+        max-width:40%;
+    }
+}

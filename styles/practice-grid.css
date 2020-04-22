@@ -1,0 +1,51 @@
+.grid-container{
+    /* center the grid-container */
+    max-width: 960px;
+    margin:0 auto; 
+    /* grid settings */
+    display:grid;
+    /* specifically set # of col in grid & their width  */
+    grid-template-columns: repeat(12,1fr);
+
+    /* set the height for any row created */
+    /* grid-auto-rows: minmax(200px,auto); */
+
+    /* set # of rows & height */
+    grid-template-rows: auto repeat(4,minmax(200px,auto));
+    grid-gap:1em;
+}
+/* =============
+    GRID ITEMS */
+
+header{
+    /* span does not include that extra grid line */
+    grid-column: span 12;
+}
+main{
+    /* grid-col = 'start/end' positions */
+    grid-column:1/9;
+
+    /* grid-row = 'start/end' positions */
+    grid-row:2/4;
+}
+#side-bar-1{
+    grid-column-start:9;
+    grid-column-end:13;
+
+    /* placing it where sidebar-2 was via sequential order */
+    grid-row-start: 3;
+    grid-row-end:4;
+}
+#side-bar-2{
+    grid-column: 10/13;
+    /* placing it where sidebar-1 was via sequential order */
+    grid-row: 2/3;
+}
+footer{
+    grid-row:4/5;
+    grid-column-start:1;
+    grid-column-end:13;
+
+}
+
+
